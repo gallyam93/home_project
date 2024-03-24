@@ -85,7 +85,7 @@ playPauseNow.addEventListener('click', function () {
 });
 
 let choices = new Choices(element, {
-	searchEnabled: false,
+	searchEnabled: true,
 	itemSelectText: '',
 });
 

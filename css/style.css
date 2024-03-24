@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .header__top {
   position: relative;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .header__logo {
@@ -298,7 +298,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 /* hero */
 
 .hero {
-  padding-top: 93px;
+  padding-top: 92px;
   padding-bottom: 94px;
   background-image: url('../img/hero_microphone.png');
   background-repeat: no-repeat;
@@ -347,7 +347,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .podcasts {
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 92px;
   background-color: #E6E8EC;
 }
 
@@ -359,7 +359,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .podcasts__list {
-  margin-bottom: 60px;
+  margin-bottom: 62px;
   flex-wrap: wrap;
   gap: var(--gap);
 }
@@ -505,7 +505,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .left__archive {
-  height: 211px;
+  height: 215px;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -520,7 +520,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .programs__btn {
-  margin-bottom: 9px;
+  margin-bottom: 12px;
   padding: 10px 54px;
   font-weight: 500;
   font-size: 16px;
@@ -636,7 +636,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .programs__card {
-  padding: 15px 16px;
+  padding: 16px 16px;
   flex-direction: column;
 }
 
@@ -654,6 +654,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
   font-size: 12px;
   line-height: 12px;
   color: var(--color-name);
+}
+
+.programs__link {
+	width: 51%;
 }
 
 /* guests */
@@ -925,11 +929,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .playlist__albums {
-  padding-top: 14px;
+  padding-top: 15px;
 }
 
 .playlist__list {
-  gap: var(--gap);
+  gap: 29px;
   flex-wrap: wrap;
 }
 
@@ -1786,6 +1790,14 @@ h1, h2, h3, h4, h5, h6, p, ul {
     fill: #4F28A5;
   }
 
+  .programs__link {
+		transition: color ease-in-out 0.4s;
+  }
+
+  .programs__link svg path{
+    transition: fill ease-in-out 0.4s;
+  }
+
   /* guests */
 
   .ui-state-fo:focus-visible {
@@ -1879,6 +1891,25 @@ h1, h2, h3, h4, h5, h6, p, ul {
   .guest__btn {
     transition: color ease-in-out 0.4s, borde-color ease-in-out 0.4s, background-color ease-in-out 0.4s;
   }
+
+	.contetn__btn:focus-visible {
+    color: #FFF;
+    background-color: #6D31EE;
+    border-color: #6D31EE;
+    outline: none;
+	}
+
+	.contetn__btn:hover {
+		color: #6D31EE;
+	}
+
+	.contetn__btn:active {
+    color: #4F28A5;
+	}
+
+	.contetn__btn {
+		transition: color ease-in-out 0.4s, borde-color ease-in-out 0.4s, background-color ease-in-out 0.4s;
+	}
 
   /* playlist */
 

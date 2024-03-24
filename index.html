@@ -52,7 +52,7 @@
 						</svg>
 					</button>
 					<form action="#" class="header__form">
-						<input type="text" placeholder="Поиск по сайту" class="header__input" tabindex="1">
+						<input type="text" placeholder="Поиск по сайту" class="header__input" id="search" tabindex="1">
 						<button class="header__form-search btn-reset" tabindex="1"><img src="img/search.svg" alt=""></button>
 						<button class="header__form-exit btn-reset" tabindex="1"><img src="img/closed_popup.svg"
 								alt=""></button>
@@ -2165,17 +2165,17 @@
 				</div>
 				<form class="about__form form">
 					<div class="form__blocktext">
-						<textarea class="form__textarea" placeholder="Что скажете?" name="text" cols="30" rows="10"
+						<textarea class="form__textarea" placeholder="Что скажете?" name="text" id="text" cols="30" rows="10"
 							data-validate-field="textarea"></textarea>
 					</div>
 					<div class="form__signature">
 						<div class="form__blockname">
-							<input class="form__name input-effects" type="text" aria-label="Введите" placeholder="Имя"
+							<input class="form__name input-effects" type="text" aria-label="Введите" id="Имя" placeholder="Имя"
 								data-validate-field="name">
 						</div>
 						<div class="form__blockemail">
-							<input class="form__email input-effects" type="email" aria-label="Введите" placeholder="Email"
-								data-validate-field="mail">
+							<input class="form__email input-effects" type="email" aria-label="Введите" id="e-mail"
+								placeholder="Email" data-validate-field="mail">
 						</div>
 					</div>
 					<button type="submit" class="form__btn btn-reset">Отправить</button>
@@ -2192,8 +2192,8 @@
 			<h2 class="popup__title">Вход</h2>
 			<p class="popup__descr">Если у вас ещё нет аккаунта, <a class="popup__link" href="#">зарегистрируйтесь</a></p>
 			<form action="https://postman-echo.com/post" class="popup__form">
-				<input type="text" class="popup__input input-effects" placeholder="Логин">
-				<input type="password" class="popup__input input-effects" placeholder="Пароль">
+				<input type="text" class="popup__input input-effects" id="login" placeholder="Логин">
+				<input type="password" class="popup__input input-effects" id="password" placeholder="Пароль">
 				<button class="popup__btn-enter btn-reset">Войти</button>
 			</form>
 			<p class="popup__text">Войти с помощью:</p>
